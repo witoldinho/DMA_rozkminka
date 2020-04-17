@@ -5,7 +5,7 @@
 //#include <proc/p32mm0256gpm028.h>
 #include "stdio.h"
 #include "pliki/dma.h"
-#include "pliki/xdma.h"
+#include "pliki/xdma.h" // IRQ od DMA
 
 #define MAX_TOKEN_WAIT_BYTES 512              // Maximum numbers of bytes to wait for 0xFE token when starting read
  volatile uint8_t DMA_BUSY = 1;      // Cleared by interrupt handler when DMA transfer is done
